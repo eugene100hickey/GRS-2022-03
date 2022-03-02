@@ -51,7 +51,7 @@ meta() %>%
 This is the course site for the _Introduction to ggplot_ workshop created by Eugene Hickey for [TU Dublin](https://tudublin.ie).
 
 <aside>
-```{r, out.height=43}
+```{r, out.height=125}
 knitr::include_graphics("slides/img/tudublin-logo.jpg")
 ```
 </aside>
@@ -69,6 +69,10 @@ Wednesday, March 9th<br/>10-1pm BST ([check your time zone](https://www.worldtim
 xaringanExtra::embed_xaringan(url = "https://grs-2022.netlify.app/slides/01-why-ggplot.html", ratio = "16:9")
 ```
 
+
+```{r embed-xaringan-01a, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://grs-2022.netlify.app/slides/02_R.html", ratio = "16:9")
+```
 
 ```{r embed-xaringan-02, echo=FALSE}
 xaringanExtra::embed_xaringan(url = "https://grs-2022.netlify.app/slides/02-proportions.html", ratio = "16:9")
