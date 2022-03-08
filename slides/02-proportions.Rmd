@@ -12,6 +12,8 @@ output:
       - css/mytheme.css
       - css/mytheme-fonts.css
     lib_dir: libs
+    includes:
+      in_header: favicon.html
     seal: false
     self_contained: true
     nature:

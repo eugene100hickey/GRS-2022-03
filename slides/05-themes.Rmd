@@ -12,6 +12,8 @@ output:
       - css/mytheme.css
       - css/mytheme-fonts.css
     lib_dir: libs
+    includes:
+      in_header: favicon.html
     seal: false
     self_contained: true
     nature:
@@ -230,7 +232,7 @@ msleep %>% ggplot(aes(x = bodywt,
     - run *ttf_import()* with path = folder from above
     - run *View(fonttable())* to check available fonts
     - usually need to restart R (*Session* then *Restart R*)
-- alternative is to use [thematic](remotes::install_github("rstudio/thematic")), see below
+- alternative is to use [thematic](remotes::install_github("rstudio/thematic"), see below
 
 
 ---

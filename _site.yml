@@ -34,3 +34,4 @@ output:
   distill::distill_article:
     toc: true
     toc_float: true
+favicon: slides/img/clock-tower.ico

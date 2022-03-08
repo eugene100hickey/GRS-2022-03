@@ -12,6 +12,8 @@ output:
       - css/mytheme.css
       - css/mytheme-fonts.css
     lib_dir: libs
+    includes:
+      in_header: favicon.html
     seal: false
     self_contained: true
     nature:
@@ -304,11 +306,11 @@ data.frame(col = colors()[1:N]) %>%
 
 ---
 
-- the whoel `farver` package is great for converting colour formats  
-- *colourPicker()* from the colourpicker package
+- the whole `farver` package is great for converting colour formats  
+- *colourPicker()* from the `colourpicker` package
     - colourPicker(numCols = 4), opens up shiny app, returns colours
-- *col2rgb()*, also *col2hex()* from the _gplots_ (not _ggplot2_) package, and *col2hcl* from the _jmw86069/jamba_ package
-    - this last is on github, so you must install the package _devtools_ then do _install_github( jmw86069/jamba)_
+- *col2rgb()*, also *col2hex()* from the `gplots` (not _ggplot2_) package, and *col2hcl* from the `jmw86069/jamba` package
+    - this last is on github, so you must install the package `devtools` then do `install_github( jmw86069/jamba)`
 
 - _colorfindr_ takes an image and identifies major colours
 
@@ -351,7 +353,7 @@ scales::show_col(colors$col_hex)
 
 ---
 
-```{r fig.height=5}
+```{r fig.height=4}
 plot1 <- dslabs::gapminder %>%
   group_by(continent, year) %>%
   summarise(average_fertility = mean(fertility, na.rm = TRUE)) %>%
@@ -364,35 +366,35 @@ plot1
 
 ---
 
-```{r}
+```{r fig.height=4}
 plot1 +
   scale_color_manual(values = c("red", "chocolate", "springgreen3", "darkgoldenrod4", "steelblue4"))
 ```
 
 ---
 
-```{r}
+```{r fig.height=4}
 plot1 +
   scale_color_brewer(type = 'qual')
 ```
 
 ---
 
-```{r}
+```{r fig.height=4}
 plot1 +
   scale_color_brewer(type = 'div')
 ```
 
 ---
 
-```{r}
+```{r fig.height=4}
 plot1 +
   scale_color_viridis_d(option = 'magma')
 ```
 
 ---
 
-```{r fig.height=5}
+```{r fig.height=4}
 # to see paletteer palette options, use
 # View(paletteer::palettes_d_names)
 
@@ -402,7 +404,7 @@ plot1 +
 
 ---
 
-```{r}
+```{r fig.height=4}
 dslabs::gapminder %>% ggplot(aes(x = life_expectancy, fill = ..x..)) +
   geom_histogram() +
   scale_fill_continuous(type = 'viridis')
@@ -411,7 +413,7 @@ dslabs::gapminder %>% ggplot(aes(x = life_expectancy, fill = ..x..)) +
 
 ---
 
-```{r}
+```{r fig.height=4}
 dslabs::gapminder %>% ggplot(aes(x = life_expectancy, fill = ..x..)) +
   geom_histogram() +
   scale_fill_gradient2(low = "darkgreen", mid = "white",
@@ -431,17 +433,15 @@ class: center, inverse
 
 ---
 
-```{r facet_example1, echo = T, message=F, warning=F, fig.height=5, fig.width=12}
-sex <- c("Female", "Male")
-names(sex) <- c("F", "M")
+```{r facet_example1, echo = T, message=F, warning=F, fig.height=4, fig.width=12}
+sex <- c("Female", "Male"); names(sex) <- c("F", "M")
 cats %>%     ### cats dataset from MASS
   ggplot(aes(Bwt, Hwt)) +
   geom_point() +
   geom_smooth(aes(col = Sex), show.legend = F, se = F) +
   facet_grid(~Sex, labeller = labeller(Sex = sex)) +
   labs(x = "Bodyweight (kg)", y = "Heart Weight (g)") +
-  theme_minimal() +
-  theme(strip.background = element_blank(), text = element_text(size = 20))
+  theme_minimal() + theme(strip.background = element_blank(), text = element_text(size = 20))
 ```
 
 ---
@@ -459,7 +459,7 @@ movielens %>%      ### movielens dataset from dslabs
 
 ---
 
-```{r facet_example3, message = F, warning = F, fig.height=8, fig.width=16}
+```{r facet_example3, message = F, warning = F, fig.height=5, fig.width=16, echo=TRUE}
 snails %>% ## snails dataset from the MASS library
   ggplot(aes(Exposure, Deaths, col = factor(Rel.Hum))) +
   facet_grid(Species ~ Temp) +

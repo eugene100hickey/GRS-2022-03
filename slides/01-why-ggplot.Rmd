@@ -12,6 +12,8 @@ output:
       - css/mytheme.css
       - css/mytheme-fonts.css
     lib_dir: libs
+    includes:
+      in_header: favicon.html
     seal: false
     self_contained: true
     nature:
@@ -48,6 +50,8 @@ meta() %>%
 ```
 
 ```{r setup, include = FALSE}
+#.libPaths(c(.libPaths(), "C:\\Users\\ehickey\\OneDrive - Technological University Dublin\\Documents\\R\\win-library\\4.0"))
+
 options(htmltools.dir.version = FALSE)
 library(knitr)
 library(tidyverse)
@@ -119,9 +123,9 @@ class: about-me-slide, inverse, middle, center
 
 .fade[Technological University<br>Dublin]
 
-[`r icon::fontawesome("link")` www.fizzics.ie](https://www.fizzics.ie)
-[`r icon::fontawesome("twitter")` @eugene100hickey](https://twitter.com/eugene100hickey)
-[`r icon::icon_style(icon::fontawesome("github"), scale = 1)` eugene100hickey](https://github.com/eugene100hickey)
+[`r icons::fontawesome("link")` www.fizzics.ie](https://www.fizzics.ie)
+[`r icons::fontawesome("twitter")` @eugene100hickey](https://twitter.com/eugene100hickey)
+[`r icons::icon_style(icons::fontawesome("github"), scale = 1)` eugene100hickey](https://github.com/eugene100hickey)
 
 ---
 layout: true
@@ -153,7 +157,7 @@ class: top
 --
 
 .pull-left-narrow[.center[
-`r icon::icon_style(icon::fontawesome("smile"), scale = 3, fill = "#e5bf00")`]]
+`r icons::icon_style(icons::fontawesome("smile"), scale = 3, fill = "#e5bf00")`]]
 
 .pull-right-wide[
 - [xaringan `r emo::ji("package")`](https://github.com/yihui/xaringan#xaringan) developed by Yihui Xie

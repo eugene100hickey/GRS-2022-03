@@ -1,5 +1,5 @@
 ---
-title: "Introduction to ggplot"
+title: "Data Visualisation"
 author:
 - name: Eugene Hickey
   url: https://www.fizzics.ie
@@ -7,7 +7,7 @@ author:
   affiliation_url: https://www.tudublin.ie
 date: "`r Sys.Date()`"
 description: |
-  An Introduction to ggplot for TU Dublin GRS 2022
+  An Introduction to Data Visualisation with ggplot for TU Dublin GRS 2022
 site: distill::distill_website
 ---
 
