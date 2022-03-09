@@ -53,6 +53,8 @@ meta() %>%
 
 
 ```{r setup, include = FALSE}
+# .libPaths(c(.libPaths(), "C:\\Users\\ehickey\\OneDrive - Technological University Dublin\\Documents\\R\\win-library\\4.0"))
+
 options(htmltools.dir.version = FALSE)
 library(tidyverse)
 library(scales)
@@ -240,6 +242,13 @@ basketball %>%
 ---
 
 
+```{r first-plot2, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://eugene-hickey.shinyapps.io/histograms/", ratio = "16:9")
+```
+
+--- 
+
+
 ```{r boxplots, echo = T, fig.height=6, include = FALSE}
 basketball %>% 
    ggplot(aes(x = position, 
@@ -347,10 +356,19 @@ stars %>%
 
 ---
 
-```{r jitter, echo = T, fig.height=6, fig.width=12}
+```{r jitter, echo = T, fig.height=5, fig.width=12}
 scatter <- Galton %>% 
   ggplot(aes(parent, child)) +
   geom_point()
 jittered <- Galton %>% ggplot(aes(parent, child)) + geom_jitter(width = 0.4, height = 0.4)
 scatter + plot_spacer() + jittered 
 ```
+
+---
+
+
+```{r first-plot, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://eugene-hickey.shinyapps.io/lunchtime-challenge/", ratio = "16:9")
+```
+
+

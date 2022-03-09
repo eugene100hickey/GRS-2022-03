@@ -281,6 +281,14 @@ xaringanExtra::embed_xaringan(url = "https://eugene-hickey.shinyapps.io/01-colou
 
 ---
 
+
+```{r first-plot2, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://eugene-hickey.shinyapps.io/02-colour-codes/", ratio = "16:9")
+```
+
+---
+
+
 # Investigating Colours in R
 
 - the following code shows the first "N" colours in R where N is set to 20 here:
@@ -420,6 +428,15 @@ dslabs::gapminder %>% ggplot(aes(x = life_expectancy, fill = ..x..)) +
                        high = "firebrick4", midpoint = 65)
 ```
 ---
+
+
+```{r first-plot, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://eugene-hickey.shinyapps.io/03-colours-plot/", ratio = "16:9")
+```
+
+
+---
+
 
 class: center, inverse
 
