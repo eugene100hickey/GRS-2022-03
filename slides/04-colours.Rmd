@@ -124,7 +124,7 @@ basketball <- read_csv("data/basketball.csv")
 ```
 
 class: title-slide, right, top
-background-image: url(img/dawn.JPG)
+background-image: url(img/flowers.JPG)
 background-position: 90% 75%, 75% 75%
 background-size:cover
 
