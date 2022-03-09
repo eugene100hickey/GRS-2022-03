@@ -267,11 +267,11 @@ class: center, inverse
     - add _theme_minimal() +_
     - add _labs(title = "My First Plot", caption = "@Data_Vis_2020")_
     
----
+<!-- --- -->
 
-```{r first-plot, echo=FALSE}
-xaringanExtra::embed_xaringan(url = "https://eugene-hickey.shinyapps.io/01-colours/", ratio = "16:9")
-```
+<!-- ```{r first-plot, echo=FALSE} -->
+<!-- xaringanExtra::embed_xaringan(url = "https://eugene-hickey.shinyapps.io/01-colours/", ratio = "16:9") -->
+<!-- ``` -->
 
 ---
 

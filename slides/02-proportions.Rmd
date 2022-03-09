@@ -168,6 +168,14 @@ palmerpenguins::penguins %>% drop_na() %>%
 ---
 
 
+
+```{r first-plot, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://eugene-hickey.shinyapps.io/aesthetics/", ratio = "16:9")
+```
+
+---
+
+
 ```{r theme, cache = F}
 
 my_colour = "firebrick4"
@@ -366,6 +374,13 @@ class: inverse
 
 ---
 
+```{r first-plot2, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://eugene-hickey.shinyapps.io/01-ggplot/", ratio = "16:9")
+```
+
+
+---
+
 class: inverse
 
 # Visualising Proportions
@@ -394,6 +409,13 @@ dslabs::gapminder %>%
 ```
 
 `r chunk_reveal("pie-gapminder")`
+
+---
+
+```{r first-plot1, echo=FALSE}
+xaringanExtra::embed_xaringan(url = "https://eugene-hickey.shinyapps.io/03-Pie-chart/", ratio = "16:9")
+```
+
 
 ---
 
