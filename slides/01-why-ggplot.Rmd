@@ -139,10 +139,10 @@ class: top
 
 # Acknowledgments
 
-.pull-left-narrow[.center[<img style="border-radius: 50%;" src="img/giovanna.jpeg">]]
+.pull-left-narrow[.center[<img style="border-radius: 50%;" src="img/rafaella.jpg">]]
 
 .pull-right-wide[
-[Giovanna Rampazzo](https://www.tudublin.ie/research/postgraduate-research/graduate-research-school/meet-the-team/), co-pilot for this workshop and administrator of the Graduate Research School.
+[Raffaella Salvante](http://timetables.dit.ie/researchndenterpriseold/graduateresearchschoolold/meettheteam/), co-pilot for this workshop and administrator of the Graduate Research School.
 ]
 
 --
