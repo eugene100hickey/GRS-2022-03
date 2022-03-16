@@ -104,7 +104,7 @@ background-size:cover
 
 ???
 
-Welcome to the workshop on ggplot.
+Welcome to the GRS workshop on ggplot.
 
 Where we'll show you how to create impressive data visualisations.
 
